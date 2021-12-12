@@ -1,9 +1,8 @@
-var body_height = 180 / 100 // 除以 100 將單位從 cm 轉成 m
-var body_weight = 90
+var body_height = 172 / 100 // 除以 100 將單位從 cm 轉成 m
+var body_weight = 80
 var BMI = parseInt(body_weight / (body_height * body_height)) 
 // BMI 值的計算公式為：體重 / 身高^2。
 // 用 parseInt 轉換成整數，避免小數點影響 if 判斷。
-
 
 if (BMI < 18.5) {
     console.log("體重過輕")
@@ -20,18 +19,5 @@ if (BMI < 18.5) {
 } else {
     console.log("找不到答案ㄋ")
 }
-
-
-// switch(BMI){
-//     case (BMI < 18.5):
-//         console.log("體重過輕")
-//         break
-//     case BMI <= 18.5 && BMI < 24:
-//         console.log("正常範圍")
-//         break
-//     default:
-//         console.log("看到這個表示判斷失敗。")
-//         break
-// }
 
 console.log("BMI number:",BMI)
